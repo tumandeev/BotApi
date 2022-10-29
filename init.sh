@@ -50,16 +50,3 @@ sudo chmod -R 777 ./storage
 
 # Мигрируем
 ./vendor/bin/sail artisan migrate --seed
-
-# Ключи для библиотеки passport
-./vendor/bin/sail artisan passport:keys
-
-./vendor/bin/sail artisan passport:install
-
-./vendor/bin/sail artisan passport:client --personal -n
-
-# Ставим завимости для сборки фронта
-./vendor/bin/sail npm i
-
-# Собираем ассеты
-./vendor/bin/sail npm run dev
